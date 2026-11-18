@@ -1,0 +1,44 @@
+
+<!--
+Les sept défauts corrigés :
+
+1. Absence de DOCTYPE : le navigateur peut utiliser le mode quirks.
+2. Absence de lang="fr" : la langue du document n'est pas précisée.
+3. Mauvais ordre des balises p et strong : les éléments doivent être correctement imbriqués.
+4. Balise hr placée à l'intérieur d'un paragraphe : elle doit être à l'extérieur.
+5. Identifiant id="info" utilisé deux fois : un id doit être unique dans une page.
+6. Valeur de l'attribut title non entourée de guillemets : les espaces posent problème.
+7. Paragraphe placé après </html> : le contenu doit rester dans le document HTML.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page à corriger</title>
+</head>
+<body>
+
+    <p>Bienvenue au <strong>club de code.</strong></p>
+
+    <p>Nos ateliers ont lieu le mercredi</p>
+
+    <hr>
+
+    <p>de 14 h à 17 h.</p>
+
+    <p id="info">Salle B12</p>
+
+    <p id="niveaux">Ouverts à tous les niveaux</p>
+
+    <p title="horaires du club">Entrée libre</p>
+
+    <p>
+        Contact : club@tek-up.tn
+        <br>
+        Tél. : 70 000 000
+    </p>
+
+</body>
+</html>
